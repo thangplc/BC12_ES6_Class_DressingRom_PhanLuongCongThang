@@ -18,12 +18,7 @@ export default function HandleEvent(listChosen, choseItems) {
             choseItems.tryCloths();
         }
     }
-    editBtn.onclick = () => {
-        toolBar.classList.add("active");
-        setting.style.display = "block";
-        fadeoutBtn.style.display = "block";
-        listChosen.render("mobile");
-    }
+
     fadeoutBtn.onclick = () => {
         toolBar.classList.remove("active");
         console.log(MainScreen.classList.length);
@@ -62,34 +57,6 @@ export default function HandleEvent(listChosen, choseItems) {
 
         }
     }
-    DelBtn.onclick = (event) => {
-        console.log(EditBtn.dataset.type);
-        choseItems.deleteCloth(EditBtn.dataset.type);
-    }
-    EditBtn.onclick = (event) => {
-        let id;
-        const activeClothTypes = document.querySelectorAll('.nav-link');
-        for (let item in activeClothTypes) {
-            if (activeClothTypes[item].dataset.type == EditBtn.dataset.type) {
-                id = item;
-                break;
-            }
-        }
-        console.log(id);
-        activeClothTypes[id].click();
-    }
-    takeShot.onclick = () => {
-        html2canvas(Screen, {
-            onrendered: function(canvas) {
-                getCanvas = canvas;
-            }
-        });
 
-    }
-    library.onclick = () => {
-        const imageData = getCanvas.toDataURL("image/png");
-        const newData = imageData.replace("image/png", "image/octet-stream");
 
-        window.location.href = newData;
-    }
 }

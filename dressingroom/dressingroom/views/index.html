@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CyberLearn Dressing Room</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./../assets/css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="card">
-            <div class="text-center">
-              <img src="./../assets/images/cybersoft.png" alt="Card image" />
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="text-center">
+                        <img src="./../assets/images/cybersoft.png" alt="Card image" />
+                    </div>
+
+                    <div class="card-body">
+                        <h4 class="card-title text-center">
+                            CyberLearn - Học lập trình trực tuyến - Dự án thử đồ trực tuyến - Virtual Dressing Room
+                        </h4>
+                    </div>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist"></ul>
+                <div class="well">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-panes" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div id="rederTry" class="row justify-content-start m-auto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 AppScreen" style="width: 100%">
+                <div class="iphone"></div>
+                <div class="circle"></div>
+                <div class="camera"></div>
+                <div class="speaker"></div>
+                <div class="screen">
+                    <div class="tool">
+                        <button class="btn btn-danger delete" data-type="">
+          <p>Xóa</p>
+          <i class="fa fa-trash-alt"></i>
+        </button>
+                        <button class="btn btn-danger edit" data-type="">
+          <p>Thay đổi</p>
+          <i class="fa fa-redo"></i>
+        </button>
+                    </div>
+                    <div class="contain">
+                        <div class="body"></div>
+                        <div class="model"></div>
+                        <div class="hairstyle"></div>
+                        <div class="necklace"></div>
+                        <div class="bikinitop"></div>
+                        <div class="bikinibottom"></div>
+                        <div class="handbag"></div>
+                        <div class="feet"></div>
+                        <div class="background"></div>
+                    </div>
+                    <div class="toolBar">
+                        <div class="library"></div>
+                        <div class="takeShot"></div>
+                        <div class="editBtn">
+                            <p>Edit</p>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <ul class="setting__list"></ul>
+                    </div>
+                    <i class="fa fa-caret-down"></i>
+                </div>
+                <div class="home1"></div>
+                <div class="home2"></div>
+                <div class="highlight"></div>
+                <div class="line"></div>
             </div>
 
-            <div class="card-body">
-              <h4 class="card-title text-center">
-                CyberLearn - Học lập trình trực tuyến - Dự án thử đồ trực tuyến
-                - Virtual Dressing Room
-              </h4>
-            </div>
-          </div>
-          <hr />
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <ul class="nav nav-pills"></ul>
-
-          <div class="well">
-            <!-- Tab panes -->
-            <div class="tab-content"></div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="contain">
-            <div class="body"></div>
-            <div class="model"></div>
-            <div class="hairstyle"></div>
-            <div class="necklace"></div>
-            <div class="bikinitop"></div>
-            <div class="bikinibottom"></div>
-            <div class="handbag"></div>
-            <div class="feet"></div>
-            <div class="background"></div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="./../models/ListChosen.js"></script>
     <script src="./../models/ChoseItem.js"></script>
     <script src="./../utils/callData.js"></script>
-    <script src="./../controllers/main.js"></script>
-  </body>
+    <script type="module" src="./../controllers/main.js"></script>
+</body>
+
 </html>

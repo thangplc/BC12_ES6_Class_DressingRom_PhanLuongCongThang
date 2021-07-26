@@ -22,7 +22,7 @@ export default class ChoseItem {
                         </div>
                         <div class="item__text">
                             <h3 class="item__title">${item.name}</h3>
-                            <button class="item__btn btn btn-danger" data-index = "${item.id}" >Thử đồ</button>
+                            <button class="item__btn btn btn-info" data-index = "${item.id}" >Thử đồ</button>
                         </div>
                     </div>
             `

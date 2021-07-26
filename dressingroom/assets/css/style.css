@@ -502,37 +502,6 @@ hr {
     color: rgb(247, 247, 247);
 }
 
-.tool {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100px;
-    left: -90px;
-    z-index: 10;
-    display: none;
-}
-
-.tool button {
-    width: 120px;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.596);
-    border: none;
-    margin-bottom: 2px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: baseline;
-    padding: 5px 10px;
-    transition: width 0.7s;
-}
-
-.tool p {
-    padding-right: 10px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.tool button:hover {
-    width: 190px;
+.item__btn {
+    border-radius: 20px;
 }
